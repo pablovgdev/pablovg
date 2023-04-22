@@ -1,20 +1,13 @@
 import { CgAlbum } from 'react-icons/cg'
+import { FaGithub, FaJs, FaLinkedin, FaNodeJs, FaReact } from 'react-icons/fa'
 import {
-	FaGitAlt,
-	FaGithub,
-	FaJava,
-	FaJs,
-	FaLinkedin,
-	FaNodeJs,
-	FaReact
-} from 'react-icons/fa'
-import {
+	SiAmazonaws,
 	SiChakraui,
-	SiFastlane,
 	SiFirebase,
 	SiGmail,
 	SiGoland,
-	SiKotlin,
+	SiJenkins,
+	SiPython,
 	SiRedux,
 	SiTypescript
 } from 'react-icons/si'
@@ -54,12 +47,17 @@ const siteConfig = {
 }
 
 const resume = {
-	url: 'https://drive.google.com/file/d/1KKVBejHxAr2PKhSCFufgnvdQTMUWt-u7/view?usp=sharing',
+	url: 'https://drive.google.com/file/d/1KGmRWIUJHt4falWmepVtdt3cRG-dIxYY/view?usp=sharing',
 	icon: <CgAlbum />,
 	name: 'Resume'
 }
 
 const backendTechStacks = [
+	{
+		name: 'Typescript',
+		icon: <SiTypescript fontSize="20px" />,
+		url: 'https://www.typescriptlang.org'
+	},
 	{
 		name: 'NodeJS',
 		icon: <FaNodeJs fontSize="20px" />,
@@ -68,21 +66,16 @@ const backendTechStacks = [
 	{
 		name: 'Golang',
 		icon: <SiGoland fontSize="20px" />,
-		url: 'https://reactnative.dev'
+		url: 'https://go.dev'
 	},
 	{
-		name: 'Kotlin',
-		icon: <SiKotlin fontSize="20px" />,
-		url: 'https://kotlinlang.org'
-	},
-	{
-		name: 'Java',
-		icon: <FaJava fontSize="20px" />,
-		url: 'https://www.java.com/en'
+		name: 'Python',
+		icon: <SiPython fontSize="20px" />,
+		url: 'https://www.python.org'
 	}
 ]
 
-const webTechStacks = [
+const frontendTechStacks = [
 	{
 		name: 'React',
 		icon: <FaReact fontSize="20px" />,
@@ -115,11 +108,11 @@ const webTechStacks = [
 	}
 ]
 
-const otherTechStacks = [
+const cicdTechStacks = [
 	{
-		name: 'CI/CD - Fastlane',
-		icon: <SiFastlane fontSize="20px" />,
-		url: 'https://fastlane.tools'
+		name: 'Jenkins',
+		icon: <SiJenkins fontSize="20px" />,
+		url: 'https://www.jenkins.io'
 	},
 	{
 		name: 'Firebase',
@@ -127,9 +120,14 @@ const otherTechStacks = [
 		url: 'https://firebase.google.com'
 	},
 	{
-		name: 'Github & GitLab',
-		icon: <FaGitAlt fontSize="20px" />,
-		url: 'https://www.gitlab.com'
+		name: 'Github',
+		icon: <FaGithub fontSize="20px" />,
+		url: 'https://www.github.com'
+	},
+	{
+		name: 'AWS',
+		icon: <SiAmazonaws fontSize="20px" />,
+		url: 'https://aws.amazon.com'
 	}
 ]
 
@@ -240,9 +238,9 @@ const sideProjects = [
 
 export {
 	menuLinks,
-	webTechStacks,
+	frontendTechStacks as webTechStacks,
 	backendTechStacks,
-	otherTechStacks,
+	cicdTechStacks as otherTechStacks,
 	siteConfig,
 	resume,
 	companies,
