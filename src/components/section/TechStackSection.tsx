@@ -1,10 +1,4 @@
 import {
-	mobileTechStacks,
-	otherTechStacks,
-	webTechStacks
-} from '../../constant'
-import StackCard from '../StackCard'
-import {
 	Grid,
 	Heading,
 	SlideFade,
@@ -16,6 +10,8 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
+import { otherTechStacks, webTechStacks } from '../../constant'
+import StackCard from '../StackCard'
 
 export default function TechStackSection() {
 	return (
@@ -67,7 +63,7 @@ export default function TechStackSection() {
 							]}
 							gap={[2, 5, 5, 5]}
 						>
-							{mobileTechStacks.map((stack) => (
+							{backendTechStacks.map((stack) => (
 								<StackCard stack={stack} key={stack?.name} />
 							))}
 						</Grid>

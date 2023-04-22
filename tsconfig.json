@@ -19,10 +19,10 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@components/*": [
+      "components/*": [
         "./components/*"
       ],
-      "@types/*": [
+      "types/*": [
         "./types/*"
       ],
     }

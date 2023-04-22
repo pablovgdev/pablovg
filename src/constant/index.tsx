@@ -1,68 +1,49 @@
 import { CgAlbum } from 'react-icons/cg'
 import {
-	FaAndroid,
 	FaGitAlt,
 	FaGithub,
 	FaJava,
 	FaJs,
 	FaLinkedin,
-	FaMedium,
-	FaReact,
-	FaSass,
-	FaStackOverflow
+	FaNodeJs,
+	FaReact
 } from 'react-icons/fa'
 import {
-	SiAntdesign,
+	SiChakraui,
 	SiFastlane,
 	SiFirebase,
 	SiGmail,
 	SiKotlin,
 	SiRedux,
-	SiTailwindcss,
 	SiTypescript
 } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
 
 const menuLinks = [
 	{ name: 'About Me', route: '/about' },
-	// { name: "Experience", route: "/experience" },
-	// { name: "Projects", route: "/projects" },
-	{ name: 'Github', route: '/github' },
-	{ name: 'Articles', route: '/article' },
-	{ name: 'Contact', route: '/contact' }
+	{ name: 'Experience', route: '/experience' },
+	{ name: 'Github', route: '/github' }
 ]
 
 const siteConfig = {
-	copyright: `Copyright © ${new Date().getFullYear()} Teo Wen Long. All Rights Reserved.`,
+	copyright: `Copyright © ${new Date().getFullYear()} Pablo Verdugo Garrido. All Rights Reserved.`,
 	author: {
-		name: 'Teo Wen Long',
+		name: 'Pablo Verdugo',
 		accounts: [
 			{
-				url: 'https://github.com/WenLonG12345',
+				url: 'https://github.com/pablovgdev',
 				icon: <FaGithub />,
 				name: 'Github',
 				type: 'gray'
 			},
 			{
-				url: 'https://www.linkedin.com/in/teo-wen-long-19960316/',
+				url: 'https://www.linkedin.com/in/pablovgdev',
 				icon: <FaLinkedin />,
 				name: 'Linkedin',
 				type: 'linkedin'
 			},
 			{
-				url: 'https://stackoverflow.com/users/12261890/teo',
-				icon: <FaStackOverflow />,
-				name: 'StackOverflow',
-				type: 'orange'
-			},
-			{
-				url: 'https://skynight1996.medium.com/',
-				icon: <FaMedium />,
-				name: 'Medium',
-				type: 'gray'
-			},
-			{
-				url: 'mailto:teowenlong0316@gmail.com',
+				url: 'mailto:pablovgdev@gmail.com',
 				icon: <SiGmail />,
 				name: 'Gmail',
 				type: 'red'
@@ -77,26 +58,26 @@ const resume = {
 	name: 'Resume'
 }
 
-const mobileTechStacks = [
+const backendTechStacks = [
 	{
-		name: 'Android',
-		icon: <FaAndroid fontSize="20px" />,
-		url: 'https://www.android.com/'
+		name: 'NodeJS',
+		icon: <FaNodeJs fontSize="20px" />,
+		url: 'https://www.nodejs.org'
 	},
 	{
 		name: 'React Native',
 		icon: <FaReact fontSize="20px" />,
-		url: 'https://reactnative.dev/'
+		url: 'https://reactnative.dev'
 	},
 	{
 		name: 'Kotlin',
 		icon: <SiKotlin fontSize="20px" />,
-		url: 'https://kotlinlang.org/'
+		url: 'https://kotlinlang.org'
 	},
 	{
 		name: 'Java',
 		icon: <FaJava fontSize="20px" />,
-		url: 'https://www.java.com/en/'
+		url: 'https://www.java.com/en'
 	}
 ]
 
@@ -104,42 +85,32 @@ const webTechStacks = [
 	{
 		name: 'React',
 		icon: <FaReact fontSize="20px" />,
-		url: 'https://reactnative.dev/'
+		url: 'https://reactnative.dev'
 	},
 	{
 		name: 'NextJS',
 		icon: <TbBrandNextjs fontSize="20px" />,
-		url: 'https://nextjs.org/'
+		url: 'https://nextjs.org'
 	},
 	{
 		name: 'Typescript',
 		icon: <SiTypescript fontSize="20px" />,
-		url: 'https://www.typescriptlang.org/'
+		url: 'https://www.typescriptlang.org'
 	},
 	{
 		name: 'Javascript',
 		icon: <FaJs fontSize="20px" />,
-		url: 'https://www.javascript.com/'
+		url: 'https://www.javascript.com'
 	},
 	{
-		name: 'Redux & Redux Saga',
+		name: 'Redux',
 		icon: <SiRedux fontSize="20px" />,
-		url: 'https://redux.js.org/'
+		url: 'https://redux.js.org'
 	},
 	{
-		name: 'TailwindCSS',
-		icon: <SiTailwindcss fontSize="20px" />,
-		url: 'https://tailwindcss.com/'
-	},
-	{
-		name: 'Ant Design',
-		icon: <SiAntdesign fontSize="20px" />,
-		url: 'https://ant.design/'
-	},
-	{
-		name: 'SASS',
-		icon: <FaSass fontSize="20px" />,
-		url: 'https://sass-lang.com/'
+		name: 'Chakra UI',
+		icon: <SiChakraui fontSize="20px" />,
+		url: 'https://chakra-ui.com'
 	}
 ]
 
@@ -147,17 +118,17 @@ const otherTechStacks = [
 	{
 		name: 'CI/CD - Fastlane',
 		icon: <SiFastlane fontSize="20px" />,
-		url: 'https://fastlane.tools/'
+		url: 'https://fastlane.tools'
 	},
 	{
 		name: 'Firebase',
 		icon: <SiFirebase fontSize="20px" />,
-		url: 'https://firebase.google.com/'
+		url: 'https://firebase.google.com'
 	},
 	{
 		name: 'Github & GitLab',
 		icon: <FaGitAlt fontSize="20px" />,
-		url: 'https://www.gitlab.com/'
+		url: 'https://www.gitlab.com'
 	}
 ]
 
@@ -165,7 +136,7 @@ const companies = [
 	{
 		title: 'Astro',
 		alt: 'astro image',
-		url: 'https://www.astro.com.my/',
+		url: 'https://www.astro.com.my',
 		role: 'Assiociate Frontend Engineer',
 		skills: ['React', 'Sass', 'Redux', 'Redux Saga', 'StorybookJS'],
 		period: 'Oct 2022 - Present',
@@ -174,7 +145,7 @@ const companies = [
 	{
 		title: 'Qumon Intelligence',
 		alt: 'qumon image',
-		url: 'https://www.qumonintelligence.com/',
+		url: 'https://www.qumonintelligence.com',
 		role: 'Software Engineer',
 		skills: [
 			'Kotlin',
@@ -190,7 +161,7 @@ const companies = [
 	{
 		title: 'TimeTec Cloud Sdn Bhd',
 		alt: 'timetec image',
-		url: 'https://www.timeteccloud.com/',
+		url: 'https://www.timeteccloud.com',
 		role: 'Mobile Application Developer Intern',
 		skills: ['Java', 'Android', 'C#', 'Appium Automation Testing', 'AWS'],
 		period: 'Jul 2019 - Jan 2020',
@@ -202,7 +173,7 @@ const educations = [
 	{
 		title: 'University Technology Malaysia (UTM)',
 		alt: 'utm image',
-		url: 'https://www.utm.my/',
+		url: 'https://www.utm.my',
 		role: "Bachelor's Degree in Computer Science (Network and Security)",
 		skills: ['CGPA - 3.79', 'CCNA', 'Security Management', 'Network Security'],
 		period: 'Sept 2016 - Sept 2020',
@@ -211,7 +182,7 @@ const educations = [
 	{
 		title: 'SMK Mentakab',
 		alt: 'smk image',
-		url: 'https://www.facebook.com/pages/category/College---university/Sekolah-Menengah-Kebangsaan-Mentakab-224802077565350/',
+		url: 'https://www.facebook.com/pages/category/College---university/Sekolah-Menengah-Kebangsaan-Mentakab-224802077565350',
 		role: 'STPM - Science Stream (Physics)',
 		skills: ['CGPA - 3.33', 'Math T', 'Physics', 'Chemistry'],
 		period: 'Jan 2015 - Jun 2016',
@@ -226,7 +197,7 @@ const sideProjects = [
 		alt: '3commasclub',
 		summary:
 			'NFC business card builder linked with unique NFT. Build business profile embed with NFC that allows others to scan and connect.',
-		link: 'https://nextjs-3commasclub-frontend.vercel.app/',
+		link: 'https://nextjs-3commasclub-frontend.vercel.app',
 		tech: ['NextJS', 'ChakraUI', 'Ant Design', 'Ant Design Pro']
 	},
 	{
@@ -269,7 +240,7 @@ const sideProjects = [
 export {
 	menuLinks,
 	webTechStacks,
-	mobileTechStacks,
+	backendTechStacks,
 	otherTechStacks,
 	siteConfig,
 	resume,
