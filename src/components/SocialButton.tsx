@@ -1,24 +1,21 @@
-import React from "react";
-import { Link, Button } from "@chakra-ui/react";
-import { Social } from "../types/social";
+import { Social } from '../types/social'
+import { Button, Link } from '@chakra-ui/react'
 
-interface ISocialButton {
-  social: Social;
+interface SocialButtonProps {
+	social: Social
 }
 
-const SocialButton: React.FC<ISocialButton> = ({ social }) => {
-  return (
-    <Link href={social.url} isExternal style={{ textDecoration: "none" }}>
-      <Button
-        colorScheme="blue"
-        size="sm"
-        margin={"5px"}
-        leftIcon={social.icon}
-      >
-        {social.name}
-      </Button>
-    </Link>
-  );
-};
-
-export default SocialButton;
+export default function SocialButton({ social }: SocialButtonProps) {
+	return (
+		<Link href={social.url} isExternal style={{ textDecoration: 'none' }}>
+			<Button
+				colorScheme="blue"
+				size="sm"
+				margin={'5px'}
+				leftIcon={social.icon}
+			>
+				{social.name}
+			</Button>
+		</Link>
+	)
+}

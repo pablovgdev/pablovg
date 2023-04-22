@@ -1,5 +1,5 @@
-import { SlideFade } from "@chakra-ui/react";
 import { MotionBox } from "../motion";
+import { SlideFade } from "@chakra-ui/react";
 
 interface Props {
   children: React.ReactNode;

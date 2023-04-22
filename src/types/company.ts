@@ -6,4 +6,4 @@ export type Company = {
   skills: string[];
   period: string;
   logo: string;
-}
+};

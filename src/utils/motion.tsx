@@ -1,5 +1,5 @@
-import { Box, Flex, Image, forwardRef, Text, List } from '@chakra-ui/react'
-import { motion, isValidMotionProp } from "framer-motion";
+import { Box, Flex, Image, List, Text, forwardRef } from '@chakra-ui/react'
+import { isValidMotionProp, motion } from "framer-motion";
 
 export const MotionBox = motion(
   forwardRef((props, ref) => {

@@ -1,19 +1,16 @@
-import React from "react";
-import { Box, Alert, AlertIcon, AlertDescription } from "@chakra-ui/react";
+import { Alert, AlertDescription, AlertIcon, Box } from '@chakra-ui/react'
 
-interface IErrorMessage {
-  message: string;
+interface ErrorMessageProps {
+	message: string
 }
 
-const ErrorMessage: React.FC<IErrorMessage> = ({ message }) => {
-  return (
-    <Box my={4}>
-      <Alert status="error" borderRadius={4}>
-        <AlertIcon />
-        <AlertDescription>{message}</AlertDescription>
-      </Alert>
-    </Box>
-  );
-};
-
-export default ErrorMessage;
+export default function ErrorMessage({ message }: ErrorMessageProps) {
+	return (
+		<Box my={4}>
+			<Alert status="error" borderRadius={4}>
+				<AlertIcon />
+				<AlertDescription>{message}</AlertDescription>
+			</Alert>
+		</Box>
+	)
+}

@@ -1,11 +1,13 @@
+import { ReactElement } from "react";
+
 export type Social = {
   url: string;
-  icon: any;
+  icon: ReactElement;
   name: string;
-}
+};
 
 export type TechStack = {
   name: string;
-  icon: any;
+  icon: ReactElement;
   url: string;
-}
+};
