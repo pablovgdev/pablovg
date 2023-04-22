@@ -1,7 +1,7 @@
 import { Box, Heading, SimpleGrid, SlideFade, Text } from '@chakra-ui/react'
+import GithubCard from 'components/GithubCard'
+import Paragraph from 'components/Paragraph'
 import { GitRepo } from 'types/gitRepo'
-import GithubCard from '../GithubCard'
-import Paragraph from '../Paragraph'
 
 interface GithubSectionProps {
 	repos: GitRepo[]

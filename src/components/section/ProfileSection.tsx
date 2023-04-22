@@ -1,8 +1,3 @@
-import { resume } from '../../constant'
-import { SpotifySong } from '../../types/spotify'
-import { MotionFlex } from '../../utils/motion'
-import Paragraph from '../Paragraph'
-import SocialButton from '../SocialButton'
 import {
 	Avatar,
 	Box,
@@ -12,7 +7,12 @@ import {
 	Link,
 	useColorModeValue
 } from '@chakra-ui/react'
+import Paragraph from 'components/Paragraph'
+import SocialButton from 'components/SocialButton'
+import { resume } from 'constants/data'
 import { BiPhoneCall } from 'react-icons/bi'
+import { SpotifySong } from 'types/spotify'
+import { MotionFlex } from 'utils/motion'
 
 interface ProfileSectionProps {
 	song: SpotifySong

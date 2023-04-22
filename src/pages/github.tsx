@@ -1,9 +1,9 @@
-import styles from '../../styles/Home.module.css'
-import GithubSection from '../components/section/GithubSection'
-import getGithubRepos from '../constant/getGithubRepos'
-import { GitRepo } from '../types/gitRepo'
 import { Container } from '@chakra-ui/react'
+import GithubSection from 'components/section/GithubSection'
+import getGithubRepos from 'constants/getGithubRepos'
 import React from 'react'
+import styles from 'styles/Home.module.css'
+import { GitRepo } from 'types/gitRepo'
 
 interface IGithubPage {
 	repos: GitRepo[]

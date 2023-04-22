@@ -1,4 +1,3 @@
-import { Company } from '../types/company'
 import {
 	Flex,
 	Heading,
@@ -10,6 +9,7 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
+import { Company } from 'types/company'
 
 interface CompanyCardProps {
 	company: Company

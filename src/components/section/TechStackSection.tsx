@@ -10,8 +10,12 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
-import { otherTechStacks, webTechStacks } from '../../constant'
-import StackCard from '../StackCard'
+import StackCard from 'components/StackCard'
+import {
+	backendTechStacks,
+	otherTechStacks,
+	webTechStacks
+} from 'constants/data'
 
 export default function TechStackSection() {
 	return (

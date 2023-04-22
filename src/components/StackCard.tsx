@@ -1,5 +1,3 @@
-import { TechStack } from '../types/social'
-import { MotionBox } from '../utils/motion'
 import {
 	Flex,
 	IconButton,
@@ -8,6 +6,8 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
+import { TechStack } from 'types/social'
+import { MotionBox } from 'utils/motion'
 
 interface StackCardProps {
 	stack: TechStack

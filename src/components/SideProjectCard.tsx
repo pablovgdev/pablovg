@@ -1,5 +1,3 @@
-import { Project } from '../types/project'
-import { MotionBox } from '../utils/motion'
 import {
 	Box,
 	Center,
@@ -10,6 +8,8 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
+import { Project } from 'types/project'
+import { MotionBox } from 'utils/motion'
 
 interface SideProjectCardProps {
 	project: Project

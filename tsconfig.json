@@ -20,10 +20,19 @@
     "incremental": true,
     "paths": {
       "components/*": [
-        "./components/*"
+        "./src/components/*"
       ],
       "types/*": [
-        "./types/*"
+        "./src/types/*"
+      ],
+      "constants/*": [
+        "./src/constants/*"
+      ],
+      "utils/*": [
+        "./src/utils/*"
+      ],
+      "styles/*": [
+        "./src/styles/*"
       ],
     }
   },

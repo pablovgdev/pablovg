@@ -1,5 +1,5 @@
-import { Social } from '../types/social'
 import { Button, Link } from '@chakra-ui/react'
+import { Social } from 'types/social'
 
 interface SocialButtonProps {
 	social: Social

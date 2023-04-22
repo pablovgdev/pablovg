@@ -1,6 +1,3 @@
-import { sideProjects } from '../../constant'
-import { Project } from '../../types/project'
-import SideProjectCard from '../SideProjectCard'
 import {
 	Heading,
 	SimpleGrid,
@@ -8,6 +5,9 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
+import SideProjectCard from 'components/SideProjectCard'
+import { sideProjects } from 'constants/data'
+import { Project } from 'types/project'
 
 interface SideProjectSectionProps {
 	project?: Project

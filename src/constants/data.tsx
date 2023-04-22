@@ -13,6 +13,7 @@ import {
 	SiFastlane,
 	SiFirebase,
 	SiGmail,
+	SiGoland,
 	SiKotlin,
 	SiRedux,
 	SiTypescript
@@ -20,9 +21,9 @@ import {
 import { TbBrandNextjs } from 'react-icons/tb'
 
 const menuLinks = [
-	{ name: 'About Me', route: '/about' },
-	{ name: 'Experience', route: '/experience' },
-	{ name: 'Github', route: '/github' }
+	{ name: 'About Me', route: '/' },
+	{ name: 'Github', route: '/github' },
+	{ name: 'Slides', route: '/slides' }
 ]
 
 const siteConfig = {
@@ -65,8 +66,8 @@ const backendTechStacks = [
 		url: 'https://www.nodejs.org'
 	},
 	{
-		name: 'React Native',
-		icon: <FaReact fontSize="20px" />,
+		name: 'Golang',
+		icon: <SiGoland fontSize="20px" />,
 		url: 'https://reactnative.dev'
 	},
 	{

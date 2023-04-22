@@ -1,5 +1,3 @@
-import { GitRepo } from '../types/gitRepo'
-import { MotionBox } from '../utils/motion'
 import {
 	Box,
 	Flex,
@@ -14,6 +12,8 @@ import {
 } from '@chakra-ui/react'
 import { BiGitRepoForked, BiStar } from 'react-icons/bi'
 import { FiGithub } from 'react-icons/fi'
+import { GitRepo } from 'types/gitRepo'
+import { MotionBox } from 'utils/motion'
 
 interface GithubCardProps {
 	gitRepo: GitRepo

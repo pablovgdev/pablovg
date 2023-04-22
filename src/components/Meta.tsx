@@ -1,6 +1,6 @@
-import { capitalise } from '../utils/capitalise'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { capitalise } from 'utils/capitalise'
 
 type MetaProps = {
 	title?: string

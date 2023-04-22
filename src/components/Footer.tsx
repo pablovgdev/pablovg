@@ -1,4 +1,3 @@
-import { siteConfig } from '../constant'
 import {
 	Box,
 	Flex,
@@ -8,6 +7,7 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
+import { siteConfig } from 'constants/data'
 
 const iconProps = {
 	variant: 'ghost',

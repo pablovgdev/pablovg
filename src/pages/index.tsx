@@ -1,7 +1,7 @@
-import ProfileSection from '../components/section/ProfileSection'
-import SideProjectSection from '../components/section/SideProjectSection'
-import TechStackSection from '../components/section/TechStackSection'
 import { Container, Divider } from '@chakra-ui/react'
+import ProfileSection from 'components/section/ProfileSection'
+import SideProjectSection from 'components/section/SideProjectSection'
+import TechStackSection from 'components/section/TechStackSection'
 import useSWR from 'swr'
 
 export default function Home() {

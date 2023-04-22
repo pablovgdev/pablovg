@@ -1,4 +1,4 @@
-import Meta from '../components/Meta'
+import Meta from 'components/Meta'
 import { motion } from 'framer-motion'
 import { ReactNode } from 'react'
 
