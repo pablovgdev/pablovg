@@ -19,14 +19,14 @@ export default function ColorModeSwitcher(props: IconButtonProps) {
 	return (
 		<Tooltip
 			label={text === 'dark' ? 'Dark mode' : 'Light mode'}
-			aria-label="A tooltip"
+			aria-label='A tooltip'
 		>
 			<IconButton
-				size="md"
-				fontSize="md"
-				variant="ghost"
-				color="current"
-				marginLeft="2"
+				size='md'
+				fontSize='md'
+				variant='ghost'
+				color='current'
+				marginLeft='2'
 				onClick={handleClick}
 				icon={<SwitchIcon />}
 				_hover={{

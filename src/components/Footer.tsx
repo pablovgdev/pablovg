@@ -18,32 +18,32 @@ const iconProps = {
 export default function Footer() {
 	return (
 		<Stack
-			as="footer"
+			as='footer'
 			isInline
 			spacing={[1, 2]}
 			p={4}
-			justifyContent="space-between"
-			alignItems="center"
+			justifyContent='space-between'
+			alignItems='center'
 			w={['100%', '90%', '90%']}
-			maxW="container.lg"
-			mx="auto"
+			maxW='container.lg'
+			mx='auto'
 		>
 			<Flex
 				flexDirection={['column', 'column', 'row']}
 				flexFlow={['column-reverse', 'column-reverse']}
 				justifyContent={['center', 'space-between']}
-				alignItems="center"
-				w="100%"
+				alignItems='center'
+				w='100%'
 			>
 				<Text
-					textAlign="center"
-					fontSize="sm"
+					textAlign='center'
+					fontSize='sm'
 					color={useColorModeValue('gray.500', 'gray.200')}
 				>
 					© {new Date().getFullYear()} Teo Wen Long{' '}
 				</Text>
 
-				<Box textAlign="center">
+				<Box textAlign='center'>
 					{siteConfig.author.accounts.map((sc, index) => (
 						<IconButton
 							key={sc.name}

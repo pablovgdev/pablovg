@@ -39,7 +39,8 @@ export default function SideProjectCard({ project }: SideProjectCardProps) {
 							objectFit={'cover'}
 							maxH={'210px'}
 							h={'210px'}
-							w="full"
+							w='full'
+							alt='image'
 						/>
 					</Box>
 					<Stack mb={3}>
@@ -56,7 +57,7 @@ export default function SideProjectCard({ project }: SideProjectCardProps) {
 						<Text color={'gray.500'}>{project?.summary}</Text>
 					</Stack>
 					{project.tech.map((tech) => (
-						<Tag size="sm" padding="0 5px" key={tech} mx={1}>
+						<Tag size='sm' padding='0 5px' key={tech} mx={1}>
 							{tech}
 						</Tag>
 					))}

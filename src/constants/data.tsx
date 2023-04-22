@@ -15,7 +15,6 @@ import { TbBrandNextjs } from 'react-icons/tb'
 
 const menuLinks = [
 	{ name: 'About Me', route: '/' },
-	{ name: 'Github', route: '/github' },
 	{ name: 'Slides', route: '/slides' }
 ]
 
@@ -55,22 +54,22 @@ const resume = {
 const backendTechStacks = [
 	{
 		name: 'Typescript',
-		icon: <SiTypescript fontSize="20px" />,
+		icon: <SiTypescript fontSize='20px' />,
 		url: 'https://www.typescriptlang.org'
 	},
 	{
 		name: 'NodeJS',
-		icon: <FaNodeJs fontSize="20px" />,
+		icon: <FaNodeJs fontSize='20px' />,
 		url: 'https://www.nodejs.org'
 	},
 	{
 		name: 'Golang',
-		icon: <SiGoland fontSize="20px" />,
+		icon: <SiGoland fontSize='20px' />,
 		url: 'https://go.dev'
 	},
 	{
 		name: 'Python',
-		icon: <SiPython fontSize="20px" />,
+		icon: <SiPython fontSize='20px' />,
 		url: 'https://www.python.org'
 	}
 ]
@@ -78,32 +77,32 @@ const backendTechStacks = [
 const frontendTechStacks = [
 	{
 		name: 'React',
-		icon: <FaReact fontSize="20px" />,
+		icon: <FaReact fontSize='20px' />,
 		url: 'https://reactnative.dev'
 	},
 	{
 		name: 'NextJS',
-		icon: <TbBrandNextjs fontSize="20px" />,
+		icon: <TbBrandNextjs fontSize='20px' />,
 		url: 'https://nextjs.org'
 	},
 	{
 		name: 'Typescript',
-		icon: <SiTypescript fontSize="20px" />,
+		icon: <SiTypescript fontSize='20px' />,
 		url: 'https://www.typescriptlang.org'
 	},
 	{
 		name: 'Javascript',
-		icon: <FaJs fontSize="20px" />,
+		icon: <FaJs fontSize='20px' />,
 		url: 'https://www.javascript.com'
 	},
 	{
 		name: 'Redux',
-		icon: <SiRedux fontSize="20px" />,
+		icon: <SiRedux fontSize='20px' />,
 		url: 'https://redux.js.org'
 	},
 	{
 		name: 'Chakra UI',
-		icon: <SiChakraui fontSize="20px" />,
+		icon: <SiChakraui fontSize='20px' />,
 		url: 'https://chakra-ui.com'
 	}
 ]
@@ -111,81 +110,23 @@ const frontendTechStacks = [
 const cicdTechStacks = [
 	{
 		name: 'Jenkins',
-		icon: <SiJenkins fontSize="20px" />,
+		icon: <SiJenkins fontSize='20px' />,
 		url: 'https://www.jenkins.io'
 	},
 	{
 		name: 'Firebase',
-		icon: <SiFirebase fontSize="20px" />,
+		icon: <SiFirebase fontSize='20px' />,
 		url: 'https://firebase.google.com'
 	},
 	{
 		name: 'Github',
-		icon: <FaGithub fontSize="20px" />,
+		icon: <FaGithub fontSize='20px' />,
 		url: 'https://www.github.com'
 	},
 	{
 		name: 'AWS',
-		icon: <SiAmazonaws fontSize="20px" />,
+		icon: <SiAmazonaws fontSize='20px' />,
 		url: 'https://aws.amazon.com'
-	}
-]
-
-const companies = [
-	{
-		title: 'Astro',
-		alt: 'astro image',
-		url: 'https://www.astro.com.my',
-		role: 'Assiociate Frontend Engineer',
-		skills: ['React', 'Sass', 'Redux', 'Redux Saga', 'StorybookJS'],
-		period: 'Oct 2022 - Present',
-		logo: '/astro.png'
-	},
-	{
-		title: 'Qumon Intelligence',
-		alt: 'qumon image',
-		url: 'https://www.qumonintelligence.com',
-		role: 'Software Engineer',
-		skills: [
-			'Kotlin',
-			'Java',
-			'Android',
-			'Javascript',
-			'React',
-			'React Native'
-		],
-		period: 'Aug 2020 - Sept 2022',
-		logo: '/qumon.png'
-	},
-	{
-		title: 'TimeTec Cloud Sdn Bhd',
-		alt: 'timetec image',
-		url: 'https://www.timeteccloud.com',
-		role: 'Mobile Application Developer Intern',
-		skills: ['Java', 'Android', 'C#', 'Appium Automation Testing', 'AWS'],
-		period: 'Jul 2019 - Jan 2020',
-		logo: '/timetec.png'
-	}
-]
-
-const educations = [
-	{
-		title: 'University Technology Malaysia (UTM)',
-		alt: 'utm image',
-		url: 'https://www.utm.my',
-		role: "Bachelor's Degree in Computer Science (Network and Security)",
-		skills: ['CGPA - 3.79', 'CCNA', 'Security Management', 'Network Security'],
-		period: 'Sept 2016 - Sept 2020',
-		logo: '/utm.png'
-	},
-	{
-		title: 'SMK Mentakab',
-		alt: 'smk image',
-		url: 'https://www.facebook.com/pages/category/College---university/Sekolah-Menengah-Kebangsaan-Mentakab-224802077565350',
-		role: 'STPM - Science Stream (Physics)',
-		skills: ['CGPA - 3.33', 'Math T', 'Physics', 'Chemistry'],
-		period: 'Jan 2015 - Jun 2016',
-		logo: '/smk.png'
 	}
 ]
 
@@ -243,7 +184,5 @@ export {
 	cicdTechStacks as otherTechStacks,
 	siteConfig,
 	resume,
-	companies,
-	educations,
 	sideProjects
 }

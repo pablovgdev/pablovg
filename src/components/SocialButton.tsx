@@ -9,8 +9,8 @@ export default function SocialButton({ social }: SocialButtonProps) {
 	return (
 		<Link href={social.url} isExternal style={{ textDecoration: 'none' }}>
 			<Button
-				colorScheme="blue"
-				size="sm"
+				colorScheme='blue'
+				size='sm'
 				margin={'5px'}
 				leftIcon={social.icon}
 			>

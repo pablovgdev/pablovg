@@ -1,12 +1,11 @@
-import ColorModeSwitcher from './ColorModeSwitcher'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
 	Avatar,
 	Box,
+	Link as CharkaLink,
 	Flex,
 	HStack,
 	IconButton,
-	Link as CharkaLink,
 	Stack,
 	useColorModeValue,
 	useDisclosure
@@ -14,10 +13,13 @@ import {
 import { menuLinks } from 'constants/data'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
+import ColorModeSwitcher from './ColorModeSwitcher'
 
 export default function NavBar() {
 	const { isOpen, onOpen, onClose } = useDisclosure()
 
+	const bgColor = useColorModeValue('gray.200', 'gray.900')
+	const linkColor = useColorModeValue('blue.500', 'white')
 	const router = useRouter()
 	const { asPath } = router
 
@@ -32,18 +34,10 @@ export default function NavBar() {
 						rounded={'md'}
 						_hover={{
 							textDecoration: 'none',
-							bg: useColorModeValue('gray.200', 'gray.900')
+							bg: bgColor
 						}}
-						bg={
-							link.route === asPath
-								? useColorModeValue('gray.200', 'gray.900')
-								: 'none'
-						}
-						color={
-							link.route === asPath
-								? useColorModeValue('blue.500', 'white')
-								: useColorModeValue('black', 'white')
-						}
+						bg={link.route === asPath ? bgColor : 'none'}
+						color={linkColor}
 						onClick={isOpen ? onClose : onOpen}
 						fontWeight='medium'
 					>
@@ -63,7 +57,7 @@ export default function NavBar() {
 					justifyContent={'space-between'}
 					w={['95%', '95%', '95%']}
 					maxW={'container.lg'}
-					mx="auto"
+					mx='auto'
 				>
 					<IconButton
 						size={'md'}
@@ -75,18 +69,18 @@ export default function NavBar() {
 					<HStack spacing={8} alignItems={'center'}>
 						<Avatar
 							as={CharkaLink}
-							size="sm"
-							href="/"
-							src="/profile_picture.png"
+							size='sm'
+							href='/'
+							src='/profile_picture.png'
 							_hover={{ borderColor: 'blue.500' }}
 						/>
-						<HStack as="nav" spacing="4" display={{ base: 'none', md: 'flex' }}>
+						<HStack as='nav' spacing='4' display={{ base: 'none', md: 'flex' }}>
 							{navItem}
 						</HStack>
 					</HStack>
 					<Flex alignItems={'center'}>
 						<ColorModeSwitcher
-							justifySelf="flex-end"
+							justifySelf='flex-end'
 							aria-label='Theme switch'
 						/>
 					</Flex>

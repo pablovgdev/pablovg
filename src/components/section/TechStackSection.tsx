@@ -21,7 +21,7 @@ export default function TechStackSection() {
 	return (
 		<SlideFade in offsetY={80}>
 			<Heading
-				as="h1"
+				as='h1'
 				fontSize={{ base: '24px', md: '30px', lg: '36px' }}
 				mb={3}
 			>
@@ -34,7 +34,7 @@ export default function TechStackSection() {
 				A list of my favorite tools and technologies that I use on a regular
 				basis.
 			</Text>
-			<Tabs variant="solid-rounded" mt={5}>
+			<Tabs variant='solid-rounded' mt={5}>
 				<TabList>
 					<Tab mx={2}>Web</Tab>
 					<Tab mx={2}>Mobile</Tab>

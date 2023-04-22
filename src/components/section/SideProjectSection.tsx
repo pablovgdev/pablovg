@@ -19,7 +19,7 @@ export default function SideProjectSection({
 	return (
 		<SlideFade in offsetY={80}>
 			<Heading
-				as="h1"
+				as='h1'
 				fontSize={{ base: '24px', md: '30px', lg: '36px' }}
 				mb={3}
 			>

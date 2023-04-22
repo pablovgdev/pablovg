@@ -7,7 +7,7 @@ interface ErrorMessageProps {
 export default function ErrorMessage({ message }: ErrorMessageProps) {
 	return (
 		<Box my={4}>
-			<Alert status="error" borderRadius={4}>
+			<Alert status='error' borderRadius={4}>
 				<AlertIcon />
 				<AlertDescription>{message}</AlertDescription>
 			</Alert>
