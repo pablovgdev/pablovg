@@ -5,7 +5,7 @@ import TechStackSection from 'components/TechStackSection'
 
 export default function Home() {
 	return (
-		<Container maxW='container.lg' mt={['5', '10']} mb={['5', '10']}>
+		<Container maxW='5xl' mt={['5', '10']} mb={['5', '10']}>
 			<ProfileSection />
 			<Divider my={10} />
 			<TechStackSection />

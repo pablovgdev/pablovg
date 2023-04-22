@@ -19,13 +19,13 @@ export default function NavBar() {
 	const { asPath } = router
 	const bgColor = useColorModeValue('purple.500', 'purple.200')
 
-	const navItem = (
+	const navItems = (
 		<>
 			{menuLinks.map((link) => (
 				<Link
 					href={link.route}
 					px={3}
-					py={1}
+					py={2}
 					rounded={'md'}
 					_hover={{
 						textDecoration: 'none',
@@ -55,19 +55,20 @@ export default function NavBar() {
 						h={16}
 						alignItems='center'
 						justifyContent='space-between'
-						w='95%'
-						maxW='container.lg'
+						w='full'
+						maxW='5xl'
 						px={4}
 					>
 						<IconButton
+							variant={'ghost'}
 							size={'md'}
-							icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+							icon={isOpen ? <CloseIcon boxSize={3} /> : <HamburgerIcon />}
 							aria-label={'Open Menu'}
 							display={['inherit', 'inherit', 'none']}
 							onClick={isOpen ? onClose : onOpen}
 						/>
 						<HStack as='nav' spacing='4' display={{ base: 'none', md: 'flex' }}>
-							{navItem}
+							{navItems}
 						</HStack>
 						<Flex alignItems={'center'}>
 							<ColorModeSwitcher
@@ -81,11 +82,12 @@ export default function NavBar() {
 					<Box
 						pb={4}
 						w={['100%', '100%', '80%']}
-						maxW={'container.lg'}
+						maxW='5xl'
+						px={4}
 						display={['inherit', 'inherit', 'none']}
 					>
 						<Stack as={'nav'} spacing={4}>
-							{navItem}
+							{navItems}
 						</Stack>
 					</Box>
 				)}
