@@ -1,7 +1,7 @@
 import { Container, Divider } from '@chakra-ui/react'
-import ProfileSection from 'components/section/ProfileSection'
-import SideProjectSection from 'components/section/SideProjectSection'
-import TechStackSection from 'components/section/TechStackSection'
+import ProfileSection from 'components/ProfileSection'
+import SideProjectSection from 'components/SideProjectSection'
+import TechStackSection from 'components/TechStackSection'
 
 export default function Home() {
 	return (

@@ -2,44 +2,33 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { capitalise } from 'utils/capitalise'
 
-type MetaProps = {
-	title?: string
-	description?: string
-	keywords?: string
-	image?: string
-}
-
-export default function Meta({
-	title,
-	description = 'A ReactJS/React Native developer, Android developer, UI / UX designer and tech enthusiast.',
-	keywords = 'React, Android, Javascript, Typescript ,Kotlin, Java',
-	image = 'https://res.cloudinary.com/teo1996/image/upload/v1681184234/lkauudqm9kgkrkmt6mvv.png'
-}: MetaProps) {
+export default function Meta() {
 	const router = useRouter()
 
-	let pageTitle
+	let title
 	if (router.pathname === '/') {
-		pageTitle = 'Teo | Front End Engineer'
+		title = 'pablovgdev'
 	} else {
 		const path = router.pathname.split('/').pop()
-		pageTitle = `Teo | ${capitalise(path)}`
+		title = `Teo | ${capitalise(path)}`
 	}
 
 	return (
 		<Head>
-			<meta name='viewport' content='width=device-width, initial-scale=1' />
-			<meta charSet='utf-8' />
-			<meta name='keywords' content={keywords} />
-			<meta name='description' content={description} />
-			<meta property='og:title' content={pageTitle} />
-			<meta property='og:image' content={image} />
-			<meta property='og:description' content={description} />
-			<meta property='og:site_name' content={pageTitle} />
-			<meta name='twitter:title' content={pageTitle} />
-			<meta name='twitter:description' content={description} />
-			<meta name='twitter:image' content={image} />
-			<meta name='twitter:card' content='summary_large_image' />
-			<title>{pageTitle}</title>
+			<link rel='icon' href='/profile.jpg' />
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap"
+				rel="stylesheet"
+			/>
+			<meta name='title' content='pablovgdev' />
+			<meta name='description' content='Pablo Verdugo | Software Engineer' />
+			<meta
+				name='keywords'
+				content='React, NodeJS, Javascript, Typescript, NextJS'
+			/>
+			<title>{title}</title>
 		</Head>
 	)
 }

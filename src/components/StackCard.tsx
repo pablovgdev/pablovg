@@ -17,7 +17,6 @@ export default function StackCard({ stack }: StackCardProps) {
 	return (
 		<MotionBox whileHover={{ y: -5 }}>
 			<LinkBox
-				as='article'
 				w='100%'
 				p={4}
 				borderColor={useColorModeValue('gray.300', 'gray.700')}
@@ -28,7 +27,7 @@ export default function StackCard({ stack }: StackCardProps) {
 				display='flex'
 				role='group'
 				_hover={{
-					borderColor: 'blue.500'
+					borderColor: useColorModeValue('purple.500', 'purple.300')
 				}}
 			>
 				<Flex alignItems='center' justifyContent='space-between'>
@@ -36,12 +35,23 @@ export default function StackCard({ stack }: StackCardProps) {
 						as='a'
 						aria-label={stack?.name}
 						mr={3}
-						_groupHover={{ color: 'blue.500' }}
+						_groupHover={{
+							color: useColorModeValue('purple.500', 'purple.300')
+						}}
 						icon={stack?.icon}
 					/>
-					<LinkOverlay href={stack?.url} rel='noopener' isExternal>
+					<LinkOverlay
+						href={stack?.url}
+						rel='noopener'
+						_hover={{ color: useColorModeValue('purple.500', 'purple.300') }}
+					>
 						<Flex>
-							<Text size='sm' _hover={{ color: 'blue.500' }}>
+							<Text
+								size='sm'
+								_hover={{
+									color: useColorModeValue('purple.500', 'purple.300')
+								}}
+							>
 								{stack?.name}
 							</Text>
 						</Flex>

@@ -34,13 +34,12 @@ export default function TechStackSection() {
 				A list of my favorite tools and technologies that I use on a regular
 				basis.
 			</Text>
-			<Tabs variant='solid-rounded' mt={5}>
+			<Tabs variant='solid-rounded' mt={5} colorScheme='purple'>
 				<TabList>
-					<Tab mx={2}>Web</Tab>
-					<Tab mx={2}>Mobile</Tab>
-					<Tab mx={2}>Others</Tab>
+					<Tab mx={2}>Fronted</Tab>
+					<Tab mx={2}>Backend</Tab>
+					<Tab mx={2}>Cloud</Tab>
 				</TabList>
-
 				<TabPanels>
 					<TabPanel>
 						<Grid

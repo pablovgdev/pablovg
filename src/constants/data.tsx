@@ -107,7 +107,7 @@ const frontendTechStacks = [
 	}
 ]
 
-const cicdTechStacks = [
+const cloudTechStacks = [
 	{
 		name: 'Jenkins',
 		icon: <SiJenkins fontSize='20px' />,
@@ -132,48 +132,36 @@ const cicdTechStacks = [
 
 const sideProjects = [
 	{
-		name: '3CommasClub NFT',
-		imageUrl: '/3commas.png',
-		alt: '3commasclub',
-		summary:
-			'NFC business card builder linked with unique NFT. Build business profile embed with NFC that allows others to scan and connect.',
-		link: 'https://nextjs-3commasclub-frontend.vercel.app',
-		tech: ['NextJS', 'ChakraUI', 'Ant Design', 'Ant Design Pro']
+		name: 'subRental',
+		imageUrl: '/subrental.png',
+		alt: 'subRental',
+		summary: 'A beautiful landing page for a rent to rent company.',
+		link: 'https://subrental.vercel.app',
+		tech: ['NextJS', 'ChakraUI', 'React']
 	},
 	{
-		name: 'KlusterX Player Portal',
-		imageUrl: '/klusterx_player.png',
-		alt: 'klusterx',
-		summary:
-			'Online Casino Player Portal, built with NextJS, TailwindCSS and MantineUI',
-		tech: ['NextJS', 'TailwindCSS', 'MantineUI', 'Zustand']
+		name: 'Fang Careers',
+		imageUrl: '/fang.webp',
+		alt: 'Fang Careers',
+		summary: 'A job board with offers from the best companies in the world.',
+		link: 'https://fang-careers.vercel.app',
+		tech: ['NextJS', 'React', 'Golang']
 	},
 	{
-		name: 'KlusterX Tenant Portal',
-		imageUrl: '/klusterx_tenant.png',
-		alt: 'klusterx',
-		summary: 'Online Casino Tenant Portal, built with Ant Design Pro',
-		tech: ['UmiJS', 'Ant Design', 'Ant Design Pro']
+		name: 'Game of Life',
+		imageUrl: '/gol.webp',
+		alt: 'Game of Life',
+		summary: "An implementation of Conway's Game of Life in React.",
+		link: 'https://pablovgdev.github.io/game-of-life/',
+		tech: ['React', 'Typescript', 'CSS modules']
 	},
 	{
-		name: 'Chativo',
-		imageUrl:
-			'https://play-lh.googleusercontent.com/tgLiP-ZL-sBuZt2RzDU1tN88Cp7NPbdjF7c0311_dui86f1HrAQM0j4gXaRE0pb5zW0=s360-rw',
-		alt: 'chativo',
-		summary:
-			'Enterprise ready live-chat base customer support & engagement software',
-		tech: ['Android', 'Kotlin', 'Android Jetpack', 'Coroutine Flow'],
-		link: 'https://play.google.com/store/apps/details?id=io.chativo.chat'
-	},
-	{
-		name: 'ChativoV',
-		imageUrl:
-			'https://play-lh.googleusercontent.com/5U5s7sSIuzP6CygPkU2ZYxyOXT-MKv7oiyweGKHgkEgVameOcYt44rnXqCTWZJNZgVqn=s360-rw',
-		alt: 'chativo-v',
-		summary:
-			'Live-chat specifically designed for visitors to communicate with real-time agent instantly',
-		tech: ['React Native', 'Javascript', 'Redux', 'Redux Saga', 'RealmJS'],
-		link: 'https://play.google.com/store/apps/details?id=io.chativo.visitor'
+		name: 'MineSweeper',
+		imageUrl: './minesweeper.webp',
+		alt: 'minesweeper',
+		summary: 'An implementation of the classic Minesweeper game in React.',
+		link: 'https://pablovgdev.github.io/minesweeper/',
+		tech: ['React', 'Typescript', 'SASS']
 	}
 ]
 
@@ -181,7 +169,7 @@ export {
 	menuLinks,
 	frontendTechStacks as webTechStacks,
 	backendTechStacks,
-	cicdTechStacks as otherTechStacks,
+	cloudTechStacks as otherTechStacks,
 	siteConfig,
 	resume,
 	sideProjects

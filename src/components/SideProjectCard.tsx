@@ -46,7 +46,7 @@ export default function SideProjectCard({ project }: SideProjectCardProps) {
 					<Stack mb={3}>
 						<Text
 							mt={3}
-							color={'blue.500'}
+							color={useColorModeValue('purple.500', 'purple.300')}
 							textTransform={'uppercase'}
 							fontWeight={800}
 							fontSize={'lg'}

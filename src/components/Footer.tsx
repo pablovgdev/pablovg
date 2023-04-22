@@ -1,8 +1,8 @@
+import { Link } from '@chakra-ui/next-js'
 import {
 	Box,
 	Flex,
 	IconButton,
-	Link,
 	Stack,
 	Text,
 	useColorModeValue
@@ -40,19 +40,19 @@ export default function Footer() {
 					fontSize='sm'
 					color={useColorModeValue('gray.500', 'gray.200')}
 				>
-					© {new Date().getFullYear()} Teo Wen Long{' '}
+					© {new Date().getFullYear()} Pablo Verdugo Garrido{' '}
 				</Text>
 
 				<Box textAlign='center'>
-					{siteConfig.author.accounts.map((sc, index) => (
+					{siteConfig.author.accounts.map((sc) => (
 						<IconButton
 							key={sc.name}
 							as={Link}
-							isExternal
 							aria-label={sc.name}
 							href={sc.url}
 							colorScheme={sc.type}
 							icon={sc.icon}
+							target='_blank'
 							{...iconProps}
 						/>
 					))}
