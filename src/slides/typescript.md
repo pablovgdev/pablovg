@@ -2,12 +2,39 @@
 paginate: true
 backgroundColor: #1A202C
 color: #ffffff
-fontFamily: "Comic Sans"
 ---
 
-# Introducción a TypeScript
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
-TypeScript es un lenguaje de programación de código abierto desarrollado por Microsoft que amplía JavaScript para agregarle características de tipos estáticos. Es un superset de JavaScript, lo que significa que todo código JavaScript válido también es código TypeScript válido. Sin embargo, TypeScript añade la capacidad de declarar tipos de datos en el código, lo que permite a los desarrolladores detectar y prevenir errores de tipo en tiempo de compilación.
+section {
+  font-family: 'Readex Pro', sans-serif !important;
+}
+</style>
+
+# Introducción a <span style="color: dodgerblue">TypeScript (TS)</span>
+
+- Es un superset de <span style="color: yellow">JavaScript (JS)</span>
+  - Amplia funcionalidad de <span style="color: yellow">JS</span> para agregarle tipado
+- Todo código <span style="color: yellow">JS</span> es código valido de <span style="color: dodgerblue">TS</span>
+  - Previene errores de tipo en tiempo de compilación
+  - El código <span style="color: dodgerblue">TS</span> se compila en codigo <span style="color: yellow">JS</span>
+- Desarrollado en 2012 en **Microsoft** por **Anders Hejlsberg** (Creador de C#)
+
+---
+
+# ¿Por qué se creó TypeScript?
+
+- <span style="color: yellow">JS</span> es un lenguage bastante extraño ([wtfjs](https://github.com/denysdovhan/wtfjs))
+  - Fue creado en 10 días por Brendan Eich durante la guerra de los navegadores
+- Conocer el tipo de tus variables tiene muchas ventajas
+  - Mejor autocompletado
+  - Mejor detección de errores
+  - Mejor refactorización
+- Coincidió con la revolución de los frameworks
+  - <span style="color: red">AngularJS</span>
+  - <span style="color: dodgerblue">ReactJS</span>
+  - <span style="color: green">VueJS</span>
 
 ---
 

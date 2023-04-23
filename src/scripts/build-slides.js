@@ -22,7 +22,7 @@ const toDir = (path) =>
 
 const build = async (path) => {
 	await $`mkdir -p ${toDir(path)}`
-	await $`marp ${path} -o ${toHtml(path)}`
+	await $`marp --html ${path} -o ${toHtml(path)}`
 }
 
 const buildFiles = async (files) => {

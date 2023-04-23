@@ -7,7 +7,7 @@
 		"start": "next start",
 		"lint": "rome check --apply-unsafe .",
 		"format": "rome format --write .",
-		"slides:dev": "PORT=3001 marp -s src/slides",
+		"slides:dev": "PORT=3001 marp -s --html src/slides",
 		"slides:build": "zx src/scripts/build-slides.js"
 	},
 	"dependencies": {
