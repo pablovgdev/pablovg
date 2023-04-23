@@ -1,3 +1,4 @@
+import ColorModeSwitcher from './ColorModeSwitcher'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { Link } from '@chakra-ui/next-js'
 import {
@@ -11,7 +12,6 @@ import {
 } from '@chakra-ui/react'
 import { menuLinks } from 'constants/data'
 import { useRouter } from 'next/router'
-import ColorModeSwitcher from './ColorModeSwitcher'
 
 export default function NavBar() {
 	const { isOpen, onOpen, onClose } = useDisclosure()
