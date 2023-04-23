@@ -166,7 +166,7 @@ export interface SideProject {
 export const sideProjects: SideProject[] = [
 	{
 		name: 'subRental',
-		imageUrl: '/subrental.png',
+		imageUrl: '/img/subrental.png',
 		alt: 'subRental',
 		summary: 'A beautiful landing page for a rent to rent company.',
 		link: 'https://subrental.vercel.app',
@@ -174,7 +174,7 @@ export const sideProjects: SideProject[] = [
 	},
 	{
 		name: 'Fang Careers',
-		imageUrl: '/fang.webp',
+		imageUrl: '/img/fang.webp',
 		alt: 'Fang Careers',
 		summary: 'A job board with offers from the best companies in the world.',
 		link: 'https://fang-careers.vercel.app',
@@ -182,7 +182,7 @@ export const sideProjects: SideProject[] = [
 	},
 	{
 		name: 'Game of Life',
-		imageUrl: '/gol.webp',
+		imageUrl: '/img/gol.webp',
 		alt: 'Game of Life',
 		summary: "An implementation of Conway's Game of Life in React.",
 		link: 'https://pablovgdev.github.io/game-of-life/',
@@ -190,7 +190,7 @@ export const sideProjects: SideProject[] = [
 	},
 	{
 		name: 'MineSweeper',
-		imageUrl: './minesweeper.webp',
+		imageUrl: '/img/minesweeper.webp',
 		alt: 'minesweeper',
 		summary: 'An implementation of the classic Minesweeper game in React.',
 		link: 'https://pablovgdev.github.io/minesweeper/',

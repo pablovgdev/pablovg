@@ -4,7 +4,7 @@ export default function NextDocument() {
 	return (
 		<Html lang='en'>
 			<Head>
-				<link rel='icon' href='/favicon.ico' />
+				<link rel='icon' href='/img/favicon.ico' />
 				<meta name='title' content='pablovgdev' />
 				<meta name='description' content='Pablo Verdugo | Software Engineer' />
 				<meta

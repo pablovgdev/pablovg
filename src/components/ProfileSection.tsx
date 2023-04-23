@@ -48,7 +48,7 @@ export default function ProfileSection() {
 					py={3}
 				>
 					<Image
-						src='/profile.jpg'
+						src='/img/profile.jpg'
 						mb={5}
 						width={220}
 						height={220}
