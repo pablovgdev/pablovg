@@ -6,11 +6,11 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
-import { TechStack } from 'types/social'
+import { LinkButtonData } from 'constants/data'
 import { MotionBox } from 'utils/motion'
 
 interface StackCardProps {
-	stack: TechStack
+	stack: LinkButtonData
 }
 
 export default function StackCard({ stack }: StackCardProps) {
@@ -33,15 +33,15 @@ export default function StackCard({ stack }: StackCardProps) {
 				<Flex alignItems='center' justifyContent='space-between'>
 					<IconButton
 						as='a'
-						aria-label={stack?.name}
+						aria-label={stack.name}
 						mr={3}
 						_groupHover={{
 							color: useColorModeValue('purple.500', 'purple.300')
 						}}
-						icon={stack?.icon}
+						icon={stack.icon}
 					/>
 					<LinkOverlay
-						href={stack?.url}
+						href={stack.url}
 						rel='noopener'
 						_hover={{ color: useColorModeValue('purple.500', 'purple.300') }}
 					>
@@ -52,7 +52,7 @@ export default function StackCard({ stack }: StackCardProps) {
 									color: useColorModeValue('purple.500', 'purple.300')
 								}}
 							>
-								{stack?.name}
+								{stack.name}
 							</Text>
 						</Flex>
 					</LinkOverlay>

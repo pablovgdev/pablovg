@@ -10,7 +10,7 @@ export default function Meta() {
 		title = 'pablovgdev'
 	} else {
 		const path = router.pathname.split('/').pop()
-		title = `Teo | ${capitalise(path)}`
+		title = `Pablo | ${capitalise(path)}`
 	}
 
 	return (

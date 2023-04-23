@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import { CgAlbum } from 'react-icons/cg'
 import { FaGithub, FaJs, FaLinkedin, FaNodeJs, FaReact } from 'react-icons/fa'
 import {
@@ -7,18 +8,20 @@ import {
 	SiGmail,
 	SiGoland,
 	SiJenkins,
+	SiMongodb,
+	SiMysql,
 	SiPython,
 	SiRedux,
 	SiTypescript
 } from 'react-icons/si'
-import { TbBrandNextjs } from 'react-icons/tb'
+import { TbBrandNextjs, TbBrandVercel } from 'react-icons/tb'
 
-const menuLinks = [
+export const menuLinks = [
 	{ name: 'About Me', route: '/' },
 	{ name: 'Slides', route: '/slides' }
 ]
 
-const siteConfig = {
+export const siteConfig = {
 	copyright: `Copyright © ${new Date().getFullYear()} Pablo Verdugo Garrido. All Rights Reserved.`,
 	author: {
 		name: 'Pablo Verdugo',
@@ -45,92 +48,122 @@ const siteConfig = {
 	}
 }
 
-const resume = {
-	url: 'https://drive.google.com/file/d/1KGmRWIUJHt4falWmepVtdt3cRG-dIxYY/view?usp=sharing',
-	icon: <CgAlbum />,
-	name: 'Resume'
+export interface LinkButtonData {
+	name: string
+	url: string
+	icon?: ReactElement
 }
 
-const backendTechStacks = [
+export const resume: LinkButtonData = {
+	name: 'Resume',
+	url: 'https://drive.google.com/file/d/1KGmRWIUJHt4falWmepVtdt3cRG-dIxYY/view?usp=sharing',
+	icon: <CgAlbum />
+}
+
+export const backendTechStacks: LinkButtonData[] = [
 	{
 		name: 'Typescript',
-		icon: <SiTypescript fontSize='20px' />,
-		url: 'https://www.typescriptlang.org'
+		url: 'https://www.typescriptlang.org',
+		icon: <SiTypescript fontSize='20px' />
 	},
 	{
 		name: 'NodeJS',
-		icon: <FaNodeJs fontSize='20px' />,
-		url: 'https://www.nodejs.org'
+		url: 'https://www.nodejs.org',
+		icon: <FaNodeJs fontSize='20px' />
 	},
 	{
 		name: 'Golang',
-		icon: <SiGoland fontSize='20px' />,
-		url: 'https://go.dev'
+		url: 'https://go.dev',
+		icon: <SiGoland fontSize='20px' />
 	},
 	{
 		name: 'Python',
-		icon: <SiPython fontSize='20px' />,
-		url: 'https://www.python.org'
+		url: 'https://www.python.org',
+		icon: <SiPython fontSize='20px' />
+	},
+	{
+		name: 'MySQL',
+		url: 'https://www.mysql.com',
+		icon: <SiMysql fontSize='20px' />
+	},
+	{
+		name: 'MongoDB',
+		url: 'https://www.mongodb.com',
+		icon: <SiMongodb fontSize='20px' />
 	}
 ]
 
-const frontendTechStacks = [
+export const frontendTechStacks: LinkButtonData[] = [
 	{
 		name: 'React',
-		icon: <FaReact fontSize='20px' />,
-		url: 'https://reactnative.dev'
+		url: 'https://react.dev',
+		icon: <FaReact fontSize='20px' />
 	},
 	{
 		name: 'NextJS',
-		icon: <TbBrandNextjs fontSize='20px' />,
-		url: 'https://nextjs.org'
+		url: 'https://nextjs.org',
+		icon: <TbBrandNextjs fontSize='20px' />
 	},
 	{
 		name: 'Typescript',
-		icon: <SiTypescript fontSize='20px' />,
-		url: 'https://www.typescriptlang.org'
+		url: 'https://www.typescriptlang.org',
+		icon: <SiTypescript fontSize='20px' />
 	},
 	{
 		name: 'Javascript',
-		icon: <FaJs fontSize='20px' />,
-		url: 'https://www.javascript.com'
+		url: 'https://www.javascript.com',
+		icon: <FaJs fontSize='20px' />
 	},
 	{
 		name: 'Redux',
-		icon: <SiRedux fontSize='20px' />,
-		url: 'https://redux.js.org'
+		url: 'https://redux.js.org',
+		icon: <SiRedux fontSize='20px' />
 	},
 	{
 		name: 'Chakra UI',
-		icon: <SiChakraui fontSize='20px' />,
-		url: 'https://chakra-ui.com'
+		url: 'https://chakra-ui.com',
+		icon: <SiChakraui fontSize='20px' />
 	}
 ]
 
-const cloudTechStacks = [
+export const cloudTechStacks: LinkButtonData[] = [
 	{
 		name: 'Jenkins',
-		icon: <SiJenkins fontSize='20px' />,
-		url: 'https://www.jenkins.io'
+		url: 'https://www.jenkins.io',
+		icon: <SiJenkins fontSize='20px' />
 	},
 	{
 		name: 'Firebase',
-		icon: <SiFirebase fontSize='20px' />,
-		url: 'https://firebase.google.com'
+		url: 'https://firebase.google.com',
+		icon: <SiFirebase fontSize='20px' />
 	},
 	{
 		name: 'Github',
-		icon: <FaGithub fontSize='20px' />,
-		url: 'https://www.github.com'
+		url: 'https://www.github.com',
+		icon: <FaGithub fontSize='20px' />
 	},
 	{
 		name: 'AWS',
-		icon: <SiAmazonaws fontSize='20px' />,
-		url: 'https://aws.amazon.com'
+		url: 'https://aws.amazon.com',
+		icon: <SiAmazonaws fontSize='20px' />
+	},
+	{
+		name: 'Vercel',
+		url: 'https://vercel.com',
+		icon: <TbBrandVercel fontSize='20px' />
 	}
 ]
 
-const sideProjects = [
+export interface SideProject {
+	name: string
+	imageUrl: string
+	alt: string
+	summary: string
+	tech: string[]
+	link?: string
+}
+
+export const sideProjects: SideProject[] = [
 	{
 		name: 'subRental',
 		imageUrl: '/subrental.png',
@@ -164,13 +197,3 @@ const sideProjects = [
 		tech: ['React', 'Typescript', 'SASS']
 	}
 ]
-
-export {
-	menuLinks,
-	frontendTechStacks as webTechStacks,
-	backendTechStacks,
-	cloudTechStacks as otherTechStacks,
-	siteConfig,
-	resume,
-	sideProjects
-}

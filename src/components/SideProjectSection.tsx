@@ -1,23 +1,10 @@
-import {
-	Heading,
-	SimpleGrid,
-	SlideFade,
-	Text,
-	useColorModeValue
-} from '@chakra-ui/react'
+import { Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import SideProjectCard from 'components/SideProjectCard'
 import { sideProjects } from 'constants/data'
-import { Project } from 'types/project'
 
-interface SideProjectSectionProps {
-	project?: Project
-}
-
-export default function SideProjectSection({
-	project
-}: SideProjectSectionProps) {
+export default function SideProjectSection() {
 	return (
-		<SlideFade in offsetY={80}>
+		<>
 			<Heading
 				as='h1'
 				fontSize={{ base: '24px', md: '30px', lg: '36px' }}
@@ -37,6 +24,6 @@ export default function SideProjectSection({
 					return <SideProjectCard key={project.name} project={project} />
 				})}
 			</SimpleGrid>
-		</SlideFade>
+		</>
 	)
 }

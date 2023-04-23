@@ -1,12 +1,12 @@
 import { Image, Link } from '@chakra-ui/next-js'
 import { Box, Flex, Heading, VStack } from '@chakra-ui/react'
+import LinkButton from 'components/LinkButton'
 import Paragraph from 'components/Paragraph'
-import SocialButton from 'components/SocialButton'
 import { resume } from 'constants/data'
 
 export default function ProfileSection() {
 	return (
-		<Box>
+		<>
 			<Flex
 				justify='space-between'
 				w='full'
@@ -38,7 +38,7 @@ export default function ProfileSection() {
 						Focused on Backend Development
 					</Paragraph>
 					<Box pt={5}>
-						<SocialButton social={resume} />
+						<LinkButton data={resume} />
 					</Box>
 				</VStack>
 				<Flex
@@ -57,6 +57,6 @@ export default function ProfileSection() {
 					/>
 				</Flex>
 			</Flex>
-		</Box>
+		</>
 	)
 }

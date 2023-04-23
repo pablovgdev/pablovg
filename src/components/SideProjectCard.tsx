@@ -8,11 +8,11 @@ import {
 	Text,
 	useColorModeValue
 } from '@chakra-ui/react'
-import { Project } from 'types/project'
+import { SideProject } from 'constants/data'
 import { MotionBox } from 'utils/motion'
 
 interface SideProjectCardProps {
-	project: Project
+	project: SideProject
 }
 
 export default function SideProjectCard({ project }: SideProjectCardProps) {

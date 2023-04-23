@@ -1,7 +1,6 @@
 import {
 	Grid,
 	Heading,
-	SlideFade,
 	Tab,
 	TabList,
 	TabPanel,
@@ -13,13 +12,13 @@ import {
 import StackCard from 'components/StackCard'
 import {
 	backendTechStacks,
-	otherTechStacks,
-	webTechStacks
+	cloudTechStacks,
+	frontendTechStacks
 } from 'constants/data'
 
 export default function TechStackSection() {
 	return (
-		<SlideFade in offsetY={80}>
+		<>
 			<Heading
 				as='h1'
 				fontSize={{ base: '24px', md: '30px', lg: '36px' }}
@@ -51,7 +50,7 @@ export default function TechStackSection() {
 							]}
 							gap={[2, 5, 5, 5]}
 						>
-							{webTechStacks.map((stack) => (
+							{frontendTechStacks.map((stack) => (
 								<StackCard stack={stack} key={stack?.name} />
 							))}
 						</Grid>
@@ -81,13 +80,13 @@ export default function TechStackSection() {
 							]}
 							gap={[2, 5, 5, 5]}
 						>
-							{otherTechStacks.map((stack) => (
+							{cloudTechStacks.map((stack) => (
 								<StackCard stack={stack} key={stack?.name} />
 							))}
 						</Grid>
 					</TabPanel>
 				</TabPanels>
 			</Tabs>
-		</SlideFade>
+		</>
 	)
 }
