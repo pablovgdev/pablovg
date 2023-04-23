@@ -46,18 +46,18 @@ section {
 
 # [TypeScript](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAZgSwE7QHIEMC2BTAXDaJBMAcxgF4YAiABXQCMAbEKgbgChRJZ0S8YwAV0z1sSCjABMADg5doMBBACy2MFBBJ89ECEbZ0YCVCSDsrIA) paso a paso
 
-## ¿Cómo añadir tipos a las variables?
+## ¿Cómo añadir tipos?
 
 ```ts
+// Variables
 const variable: Type = value;
 ```
 
-Ejemplo:
-
 ```ts
-const name: string = "Pablo";
-const age: number = 28;
-const isMentor: boolean = true;
+// Funciones
+function functionName(param1: Type, param2: Type): ReturnType {
+  return value;
+}
 ```
 
 ---
