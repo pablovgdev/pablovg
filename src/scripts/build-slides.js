@@ -1,5 +1,5 @@
-import { readdir } from 'node:fs/promises'
-import { join } from 'node:path'
+const readdir = require('node:fs/promises').readdir
+const join = require('node:path').join
 
 const markdownRoot = 'src/slides'
 const htmlRoot = 'public/slides'
@@ -35,6 +35,9 @@ const buildFiles = async (files) => {
 	}
 }
 
-const files = await walk(markdownRoot)
+const run = async () => {
+	const files = await walk(markdownRoot)
+	await buildFiles(files)
+}
 
-await buildFiles(files)
+run()

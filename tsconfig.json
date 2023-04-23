@@ -22,9 +22,6 @@
       "components/*": [
         "./src/components/*"
       ],
-      "types/*": [
-        "./src/types/*"
-      ],
       "constants/*": [
         "./src/constants/*"
       ],
@@ -39,7 +36,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/scripts/build-slides.js"
   ],
   "exclude": [
     "node_modules"

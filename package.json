@@ -1,6 +1,5 @@
 {
 	"name": "pablogdev-portfolio",
-	"type": "module",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
@@ -9,7 +8,7 @@
 		"lint": "rome check --apply-unsafe .",
 		"format": "rome format --write .",
 		"slides:dev": "PORT=3001 marp -s src/slides",
-		"slides:build": "zx build-slides.js"
+		"slides:build": "zx src/scripts/build-slides.js"
 	},
 	"dependencies": {
 		"@chakra-ui/icons": "^2.0.18",
