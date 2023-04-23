@@ -1,7 +1,8 @@
 ---
+theme: default
+class:
+  - invert
 paginate: true
-backgroundColor: #1A202C
-color: #ffffff
 ---
 
 <style>
@@ -12,14 +13,19 @@ section {
 }
 </style>
 
-# Introducción a <span style="color: dodgerblue">TypeScript (TS)</span>
+# Introducción a TypeScript ([Handbook](https://www.typescriptlang.org/docs/handbook/intro.html))
 
-- Es un superset de <span style="color: yellow">JavaScript (JS)</span>
-  - Amplia funcionalidad de <span style="color: yellow">JS</span> para agregarle tipado
-- Todo código <span style="color: yellow">JS</span> es código valido de <span style="color: dodgerblue">TS</span>
-  - Previene errores de tipo en tiempo de compilación
-  - El código <span style="color: dodgerblue">TS</span> se compila en codigo <span style="color: yellow">JS</span>
-- Desarrollado en 2012 en **Microsoft** por **Anders Hejlsberg** (Creador de C#)
+- TypeScript -> <span style="color: dodgerblue">TS</span>
+- JavaScript -> <span style="color: yellow">JS</span>
+
+---
+
+# ¿Qué es TypeScript?
+
+- Es un superset de <span style="color: yellow">JS</span> desarrollado en 2012 en **Microsoft** por **Anders Hejlsberg** (Creador de C#)
+  - Amplía la funcionalidad de <span style="color: yellow">JS</span> para agregarle tipado
+  - El código <span style="color: dodgerblue">TS</span> se compila en código <span style="color: yellow">JS</span>
+  - Todo código <span style="color: yellow">JS</span> es código valido de <span style="color: dodgerblue">TS</span>
 
 ---
 
@@ -27,9 +33,9 @@ section {
 
 - <span style="color: yellow">JS</span> es un lenguage bastante extraño ([wtfjs](https://github.com/denysdovhan/wtfjs))
   - Fue creado en 10 días por Brendan Eich durante la guerra de los navegadores
-- Conocer el tipo de tus variables tiene muchas ventajas
-  - Mejor autocompletado
+- Tener variables tipadas tiene muchas ventajas para proyectos grandes
   - Mejor detección de errores
+  - Mejor autocompletado
   - Mejor refactorización
 - Coincidió con la revolución de los frameworks
   - <span style="color: red">AngularJS</span>
@@ -38,34 +44,115 @@ section {
 
 ---
 
-# ¿Por qué usar TypeScript?
+# [TypeScript](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAZgSwE7QHIEMC2BTAXDaJBMAcxgF4YAiABXQCMAbEKgbgChRJZ0S8YwAV0z1sSCjABMADg5doMBBACy2MFBBJ89ECEbZ0YCVCSDsrIA) paso a paso
 
-El uso de TypeScript tiene varios beneficios para los desarrolladores:
+## ¿Cómo añadir tipos a las variables?
 
-1. **Tipo de datos estáticos:** TypeScript permite declarar tipos de datos en el código, lo que proporciona una capa adicional de seguridad y ayuda a prevenir errores de tipo en tiempo de compilación. Esto permite una detección temprana de errores y una mayor confiabilidad en el código.
+```ts
+const variable: Type = value;
+```
 
-2. **Mejor soporte para herramientas de desarrollo:** TypeScript incluye un sistema de tipos que proporciona información adicional a las herramientas de desarrollo, como editores de código y entornos de desarrollo integrados (IDE). Esto permite una mejor autocompletación de código, navegación y detección de errores en tiempo real, lo que mejora la productividad del desarrollador.
+Ejemplo:
 
-3. **Compatibilidad con JavaScript:** Como TypeScript es un superset de JavaScript, todo código JavaScript válido es también código TypeScript válido. Esto significa que los desarrolladores pueden adoptar TypeScript gradualmente en proyectos existentes sin necesidad de reescribir todo el código.
-
-4. **Características modernas de ECMAScript:** TypeScript admite las características modernas de ECMAScript (la especificación en la que se basa JavaScript), lo que permite a los desarrolladores utilizar sintaxis y características más recientes incluso si el entorno de ejecución no lo soporta completamente.
-
-5. **Comunidad activa y amplia:** TypeScript tiene una comunidad activa y en crecimiento, con una gran cantidad de bibliotecas y herramientas disponibles. Además, está respaldado por Microsoft, lo que garantiza su continuidad y soporte a largo plazo.
-
----
-
-# ¿Cómo funciona TypeScript?
-
-TypeScript es un lenguaje de programación compilado, lo que significa que el código TypeScript se compila a código JavaScript antes de ser ejecutado en el navegador o en un entorno de Node.js. El proceso de trabajo con TypeScript generalmente implica los siguientes pasos:
-
-1. **Declaración de tipos de datos:** En TypeScript, se pueden declarar tipos de datos para variables, funciones, parámetros y otros elementos del código. Esto permite especificar el tipo de valor que se espera en cada caso y ayuda a prevenir errores de tipo.
-
-2. **Compilación del código TypeScript:** Una vez que se ha escrito el código TypeScript, se debe compilar a código JavaScript utilizando el compilador de TypeScript. Esto se puede hacer a través de la línea de comandos o mediante herramientas de compilación integradas en los IDE.
-
-3. **Ejecución del código JavaScript resultante:** El código JavaScript resultante de la compilación de TypeScript se puede ejecutar en cualquier entorno que admita JavaScript, como navegadores web, servidores Node.js u otros entornos de ejecución.
+```ts
+const name: string = "Pablo";
+const age: number = 28;
+const isMentor: boolean = true;
+```
 
 ---
 
-# Conclusiones
+# [TypeScript](https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABABwE4zFAIgQyjgCmBlQGcoA5HAWwFMAuRc9MAcwBpEAbHcquxswwdEtajhhdBUFqwCUiAN4AoRGsQQEpOF1oA6LnFZESfGrU48zdTmIlc5AbmUBfZctCRYCFCygEoWgAPKEYcMABPBRV1DS0dfUNjQJCnV3c0DH8ARjTMzAIAIgALWi5DQry-ANQQWiqsgjAQcoaC8AATWmIwWg62-0UXAYIAbQBdOSA) paso a paso
 
-TypeScript es una herramienta poderosa para los desarrolladores que desean agregar tipos estáticos y características modernas a sus proyectos JavaScript. Proporciona una mayor seguridad en tiempo de compilación, mejor soporte para herramientas de
+## Otros tipos de variables:
+
+- `any`
+- `void`
+- `undefined`
+- `null`
+- `object`
+- `array`
+
+---
+
+# [TypeScript](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgJIAVoGcD2JkDeAUMsiHALYQBcyWYUoA5gNwnJxM1kCuFARtDYBfIkQR56yAA5x+AGxy0M2PMgC8hduSq0AROjmK9AGnaduAJgAcZ4WyIB6R8gDCa6VBxMolRMABn-BxGCHA4ABM4DmQcfgArCDAcLHF5OCwsZEwoXHxgCml5CCpwLJVctWJSCRB6KB4EZKgACmkeBWAEMkpueuYTGQ75Lo4uWhA+QSgASkJRUXFJMGQI4AgmJWzVfE0QCAB3bcqQFr0AEXXN02RLADYZliA) paso a paso
+
+## Interfaces y clases
+
+```ts
+interface IPerson {
+  name: string;
+  age: number;
+}
+
+const pablo: IPerson = {
+  name: "Pablo",
+  age: 28,
+};
+
+// Con programación orientada a objetos
+class Person implements IPerson {
+  constructor(public name: string, public age: number) {}
+}
+
+const diego: Person = new Person("Diego", 26);
+```
+
+---
+
+# [TypeScript](https://www.typescriptlang.org/play?#code/C4TwDgpgBAwghsKBeKBvAUFKA7OBbCALigGdgAnAS2wHMBuTKMOAdxOOwFc8AjCchgF8G6UJCgAhSuQAmyNI1wFiZKrQZYW1Guxzc+A9MPToA9KagBJbMH4kIAYweUAz9mIBlAPYAbL1D8SKAQqHk5gLyCHLzxObAgSdGjsMiYIYAA5fCJYBCgAH0lpORRUHGziACIAGU4ADy9KgBomVl0AFhatWl0ABihjMwsAVWxXdygAFS8ZSIC5kMowiMTk1MhgAEEfH2J4RAAyItl5MqUcyoAFXxBm1rZiXq7tXQAmAbogA) paso a paso
+
+## Operaciones de tipos
+
+```ts
+type Cat = {
+  name: string;
+  paws: number;
+};
+
+type Bird = {
+  name: string;
+  wings: number;
+};
+
+// Intersección: Solo los atributos comunes
+const petName: Cat | Bird = { name: "Luxo", paws: 4, wings: 0 };
+
+// Unión: Todos los atributos
+const petAll: Cat & Bird = { name: "Poly", paws: 0, wings: 2 };
+```
+
+---
+
+# [TypeScript](https://www.typescriptlang.org/play) paso a paso
+
+## [Diferencia](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces) entre `interface` y `type`
+
+Usa `interface` siempre, principalmente para definir tipos de objetos:
+
+```ts
+interface IPerson {
+  name: string;
+  age: number;
+}
+
+const person: IPerson = { name: "Pablo", age: 28 };
+```
+
+Utiliza `type` para definir tipos de datos primitivos:
+
+```ts
+type Color = "red" | "blue" | "green";
+```
+
+---
+
+# ¿Cómo se usa TypeScript?
+
+- Utilizar la extensión de archivo `.ts` en vez de `.js`
+- Compilar usando el comando `tsc`
+  - También se puede ejecutar directamente con `ts-node`
+
+---
+
+# ¿Preguntas?
