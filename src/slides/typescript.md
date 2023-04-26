@@ -75,7 +75,25 @@ function functionName(param1: Type, param2: Type): ReturnType {
 
 ---
 
-# [TypeScript](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgJIAVoGcD2JkDeAUMsiHALYQBcyWYUoA5gNwnJxM1kCuFARtDYBfIkQR56yAA5x+AGxy0M2PMgC8hduSq0AROjmK9AGnaduAJgAcZ4WyIB6R8gDCa6VBxMolRMABn-BxGCHA4ABM4DmQcfgArCDAcLHF5OCwsZEwoXHxgCml5CCpwLJVctWJSCRB6KB4EZKgACmkeBWAEMkpueuYTGQ75Lo4uWhA+QSgASkJRUXFJMGQI4AgmJWzVfE0QCAB3bcqQFr0AEXXN02RLADYZliA) paso a paso
+# [TypeScript](https://www.typescriptlang.org/play?#code/MYewdgzgLgBAbgQwE4EsECMA2BTAXDaVMAcxgB8YwBXAW3WyRgF4YAiACW00xBgHUQSTABNWAbgBQElADMYACigBPAA7YQcxKgw5mTFq0IoSrAJQwA3hJgxQkEDgB0PYvNYBJWCggwEMKNgAHrBGJqaSAL4wXBDYlta24BAO2M4grh5ePn7UdAxmkUA) paso a paso
+
+## Comprobación de tipos primitivos
+
+Con la keyword `typeof` podemos comprobar el tipo de una variable primitiva
+
+```ts
+const variable: string | number = "Hello World";
+
+if (typeof variable === "string") {
+  console.log("It is a text string");
+} else {
+  console.log("It is a number");
+}
+```
+
+---
+
+# [TypeScript](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgJIAVoGcD2JkDeAUMsiHALYQBcyWYUoA5gNwnJxM1kCuFARtDYBfIkQR56yAFY4AFiFoZseZAF5C7clVoAiAFLyQugDTtO3AEwAOM8LZEA9I+QBhVQAcoOJlEqJgAGf8HEYIcDgAEzgOZBx+aQgwHCxxABs4LCxkTChcfGAKDzSIKnBs5TzVYlIJEHooHgRkqAAKDx5+NOAEMkpuBuYTZA6uno4uWhA+QSgASkJRUXFJMBk4EG5c-PUyCAB3HJUQVoMNiFNkSwA2OZYgA) paso a paso
 
 ## Interfaces y clases
 
@@ -85,8 +103,8 @@ interface IPerson {
   age: number;
 }
 
-const pablo: IPerson = {
-  name: "Pablo",
+const john: IPerson = {
+  name: "John",
   age: 28,
 };
 
@@ -95,7 +113,28 @@ class Person implements IPerson {
   constructor(public name: string, public age: number) {}
 }
 
-const diego: Person = new Person("Diego", 26);
+const jane: Person = new Person("Jane", 26);
+```
+
+---
+
+# [TypeScript](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgJIAVoGcD2JkDeAUMsiHALYQBcyWYUoA5gNwnJxM1kCuFARtDYBfIkQQAbOFizJMUXPmAUADhIhVwsjNjyF2CPPSg8EYHFAAUKnvwnAEZSt2PMANMht2HHLrRB8glAAlISiouJSMsgAohIwyBAAHpAgACay8ophkdKyABJ8cPjJqRlyuvgEEYYg9HQ4VHjcWXoAvGQQAO6x8ZYARAAyEEw4Uf0eAEwAHMFsRMAJlrhNICig9MVIOAlxMKHEpLW46gB0EjhMA6hgyMCyxYnx-XNEwqQQEljrSysQzXc6mAtv8EoUKMUDgYjGMIOdLtdbvcOMgABZFEAvERAA) paso a paso
+
+## Comprobación de tipos de instancias de clases
+
+Con la keyword `instanceof` podemos comprobar el tipo de una instancia de una clase
+
+```ts
+class Elf extends Person {}
+class Human extends Person {}
+
+const someone: Person = new Elf("Legolas", 28);
+
+if (someone instanceof Elf) {
+  console.log("It is an elf");
+} else if (someone instanceof Human) {
+  console.log("It is a human");
+}
 ```
 
 ---
@@ -124,7 +163,50 @@ const petAll: Cat & Bird = { name: "Poly", paws: 0, wings: 2 };
 
 ---
 
-# [TypeScript](https://www.typescriptlang.org/play) paso a paso
+# [TypeScript](https://www.typescriptlang.org/play?#code/C4TwDgpgBAwghsKBeKBvAUFKA7OBbCALigGdgAnAS2wHMBuTKMOAdxOOwFc8AjCchgF8G6UJCgAhSuQAmyNI1wFiZKrQZYW1Guxzc+A9MPToAxgHtsZJhGABZOAGt+8gBSRgAFXBEoAIlMEPygAH38eaRk-AEpieEQwqVlkAD5GD29xJGz-QOBggH40HHxfPwAZTgAPcz8AGiZWXQAWKEEoYlQS5X8ABXMAGxB6qC1aXQAmNpELK0RKEni3DziEUMlI2Jt5klg1pBT-ZjZg6m2Zy2sFpLkUd1tVhI3ZLY8oBefbtKx7xDhdm7RAB0Yx0UAAhDlONgZBAAGbUCAyC5zbbyDwOZzkVwBILREQAegJUAAIhASGBOABL3awqCcEhwcj03BQGicJkyShwKB04CUMDmBoQAZQfmC3nQAY8gBuTO5PAG0ECvG56EocKgrgW8V+0WiCiwsxIgwgQIG5hovyBxxIDT8tpiQigIpI0A1WuukT1BowRsupvNlutoLt-lDTqMQA) paso a paso
+
+## Comprobación de tipos de objetos y guardias de tipo
+
+Con la keyword `is` podemos hacer una guardia de tipo
+Con la keyword `in` podemos ver si una propiedad existe en un objeto
+
+```ts
+const isCat = (pet: Cat | Bird): pet is Cat => "paws" in pet;
+```
+
+</br>
+Con la keyword `as` podemos hacer una aserción de tipo
+</br>
+Evita usar `as` en la medida de lo posible, es una mala práctica
+
+```ts
+const isBird = (pet: Cat | Bird): pet is Bird =>
+  (pet as Bird).wings !== undefined;
+```
+
+---
+
+# [TypeScript](https://www.typescriptlang.org/play?#code/C4TwDgpgBAwghsKBeKBvAUFKA7OBbCALigGdgAnAS2wHMBuTKMOAdxOOwFc8AjCchgF8G6UJCgAhSuQAmyNI1wFiZKrQZYW1Guxzc+A9MPToAxgHtsZJhGABZOAGt+8gBSRgAFXBEoAIlMEPygAH38eaRk-AEpieEQwqVlkAD5GD29xJGz-QOBggH40HHxfPwAZTgAPcz8AGiZWXQAWKEEoYlQS5X8ABXMAGxB6qC1aXQAmNpELK0RKEni3DziEUMlI2Jt5klg1pBT-ZjZg6m2Zy2sFpLkUd1tVhI3ZLY8oBefbtKx7xDhdm7RAB0Yx0UAAhDlONgZBAAGbUCAyC5zbbyDwOZzkVwBILREQAegJUAAIhASGBOABL3awqCcEhwcj03BQGicJkyShwKB04CUMDmBoQAZQfmC3nQAY8gBuTO5PAG0ECvG56EocKgrgW8V+0WiCiwsxIgwgQIG5hovyBxxIDT8tpiQigIpI0A1WuukT1BowRsupvNlutoLt-lDTqMQA) paso a paso
+
+## Cómo aplicar una guardia de tipo
+
+```ts
+const petMaker = (petType: "cat" | "bird"): Cat | Bird =>
+  petType === "cat" ? { name: "Luxo", paws: 4 } : { name: "Poly", wings: 2 };
+
+const pet = petMaker("cat");
+
+// Después de usar una guardia de tipo, el tipo de la variable cambia
+if (isCat(pet)) {
+  console.log(pet.paws);
+} else if (isBird(pet)) {
+  console.log(pet.wings);
+}
+```
+
+---
+
+# [TypeScript](https://www.typescriptlang.org/play?#code/Q) paso a paso
 
 ## [Diferencia](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces) entre `interface` y `type`
 
@@ -136,7 +218,7 @@ interface IPerson {
   age: number;
 }
 
-const person: IPerson = { name: "Pablo", age: 28 };
+const person: IPerson = { name: "John", age: 28 };
 ```
 
 Utiliza `type` para definir tipos de datos primitivos:
