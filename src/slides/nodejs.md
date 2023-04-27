@@ -25,6 +25,7 @@ Es un entorno de ejecución de <span style="color: yellow">JS</span> desarrollad
 - Permite ejecutar <span style="color: yellow">JS</span> fuera del navegador
 - Usa un modelo asíncrono y orientado a eventos
 - Facilita la creación de servidores web escalables
+- Está escrito en <span style="color: cyan">C++</span>
 
 ---
 
@@ -47,6 +48,8 @@ Aprovecha el modelo asíncrono del motor **V8** de Google:
 - Las operaciones "lentas" (bloquantes) se delegan al sistema operativo (libuv)
   - Mientras, el hilo principal puede seguir procesando otras peticiones
   - Cuando la operación lenta termina, se ejecuta un callback
+- Es muy bueno en operaciones de entrada/salida (I/O)
+- Es muy malo en operaciones intensivas de CPU
 
 ---
 
