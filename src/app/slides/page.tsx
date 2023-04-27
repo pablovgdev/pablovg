@@ -1,16 +1,26 @@
 'use client'
 
+import { HStack } from '@chakra-ui/react'
 import LinkButton from 'components/LinkButton'
-import { SiTypescript } from 'react-icons/si'
+import { SiNodedotjs, SiTypescript } from 'react-icons/si'
 
 export default function Home() {
 	return (
-		<LinkButton
-			data={{
-				name: 'Typescript',
-				url: '/slides/typescript.html',
-				icon: <SiTypescript />
-			}}
-		/>
+		<HStack>
+			<LinkButton
+				data={{
+					name: 'NodeJS',
+					url: '/slides/nodejs.html',
+					icon: <SiNodedotjs />
+				}}
+			/>
+			<LinkButton
+				data={{
+					name: 'Typescript',
+					url: '/slides/typescript.html',
+					icon: <SiTypescript />
+				}}
+			/>
+		</HStack>
 	)
 }
