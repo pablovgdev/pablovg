@@ -1,4 +1,5 @@
-import ColorModeSwitcher from './ColorModeSwitcher'
+'use client'
+
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { Link } from '@chakra-ui/next-js'
 import {
@@ -11,12 +12,12 @@ import {
 	useDisclosure
 } from '@chakra-ui/react'
 import { menuLinks } from 'constants/data'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
+import ColorModeSwitcher from './ColorModeSwitcher'
 
 export default function NavBar() {
 	const { isOpen, onOpen, onClose } = useDisclosure()
-	const router = useRouter()
-	const { asPath } = router
+	const path = usePathname()
 	const bgColor = useColorModeValue('purple.500', 'purple.200')
 
 	const navItems = (
@@ -32,9 +33,9 @@ export default function NavBar() {
 						bg: bgColor,
 						color: useColorModeValue('white', 'black')
 					}}
-					bg={link.route === asPath ? bgColor : 'none'}
+					bg={link.route === path ? bgColor : 'none'}
 					color={
-						link.route === asPath
+						link.route === path
 							? useColorModeValue('white', 'black')
 							: useColorModeValue('black', 'white')
 					}

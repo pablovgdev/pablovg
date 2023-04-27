@@ -1,3 +1,5 @@
+'use client'
+
 import { Heading, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import SideProjectCard from 'components/SideProjectCard'
 import { sideProjects } from 'constants/data'

@@ -1,3 +1,5 @@
+'use client'
+
 import { Image, Link } from '@chakra-ui/next-js'
 import { Box, Flex, Heading, VStack } from '@chakra-ui/react'
 import LinkButton from 'components/LinkButton'

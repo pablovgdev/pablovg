@@ -11,5 +11,7 @@ const config = {
 	initialColorMode: 'dark'
 }
 
+// localStorage.setItem('chakra-ui-color-mode', 'light');
+
 const theme = extendTheme({ fonts, config })
 export default theme
