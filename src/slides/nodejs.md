@@ -52,7 +52,7 @@ Aprovecha el modelo asíncrono del motor **V8** de Google:
 
 # Vídeo explicativo
 
-<iframe width="800" height="600"src="https://www.youtube.com/watch?v=lqLSNG_79lI"></iframe>
+[Enlace](https://www.youtube.com/watch?v=lqLSNG_79lI)
 
 ---
 
