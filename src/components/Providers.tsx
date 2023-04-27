@@ -1,10 +1,10 @@
 'use client'
 
+import MainLayout from './MainLayout'
 import { CacheProvider } from '@chakra-ui/next-js'
 import { ChakraProvider } from '@chakra-ui/react'
 import { ReactNode, useEffect, useState } from 'react'
 import theme from 'styles/theme'
-import MainLayout from './MainLayout'
 
 export default function Providers({
 	children

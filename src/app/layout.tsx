@@ -1,7 +1,7 @@
+import '../styles/globals.css'
 import Providers from 'components/Providers'
 import { Metadata } from 'next'
 import { ReactNode } from 'react'
-import '../styles/globals.css'
 
 export const metadata: Metadata = {
 	title: 'pablovgdev',

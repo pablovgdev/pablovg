@@ -1,7 +1,7 @@
-import { Container, SlideFade } from '@chakra-ui/react'
-import { ReactNode } from 'react'
 import Footer from './Footer'
 import NavBar from './NavBar'
+import { Container, SlideFade } from '@chakra-ui/react'
+import { ReactNode } from 'react'
 
 interface MainLayoutProps {
 	children: ReactNode
