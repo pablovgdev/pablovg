@@ -56,7 +56,7 @@ export interface LinkButtonData {
 
 export const resume: LinkButtonData = {
 	name: 'Resume',
-	url: 'https://drive.google.com/file/d/1KGmRWIUJHt4falWmepVtdt3cRG-dIxYY/view?usp=sharing',
+	url: 'https://drive.google.com/file/d/1w_oZ0iRSJndfxQsLq4Z4TrZYaqj1FwFm/view?usp=sharing',
 	icon: <CgAlbum />
 }
 

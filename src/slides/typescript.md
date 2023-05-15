@@ -175,8 +175,8 @@ const isCat = (pet: Cat | Bird): pet is Cat => "paws" in pet;
 ```
 
 </br>
+
 Con la keyword `as` podemos hacer una aserción de tipo
-</br>
 Evita usar `as` en la medida de lo posible, es una mala práctica
 
 ```ts
