@@ -101,4 +101,7 @@ Fases típicas:
 
 # Preguntas y taller
 
-![](https://media.licdn.com/dms/image/C4D12AQF2HyN6MILFGw/article-cover_image-shrink_423_752/0/1646657644961?e=1689811200&v=beta&t=WyDkmx7_tMm0n8yyD_W4E8rWh_fRLAf2XFTpAqrkH4w)
+- ¿Qué expectativas salariales tienes?
+- ¿Dónde te ves de aquí a 5 años?
+- ¿Qué puedes aportar a nuestra empresa?
+- ¿Estás en otros procesos?
