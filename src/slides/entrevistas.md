@@ -99,9 +99,66 @@ Fases típicas:
 
 ---
 
-# Preguntas y taller
+# Preguntas típicas de recursos humanos
 
 - ¿Qué expectativas salariales tienes?
 - ¿Dónde te ves de aquí a 5 años?
 - ¿Qué puedes aportar a nuestra empresa?
 - ¿Estás en otros procesos?
+
+---
+
+# Preguntas típicas de NodeJS y JS
+
+- ¿Cómo funciona NodeJS?
+  - ¿Qué es el event loop?
+  - ¿Qué es una promesa?
+- ¿Qué es async/await?
+- ¿Qué es un closure?
+- ¿Qué es el scope?
+
+---
+
+# Preguntas típicas de bases de datos
+
+- ¿Qué es una base de datos relacional?
+  - ¿Qué ventajas y desventajas tiene?
+  - ¿Cómo se escala? (Master/Slave)
+- ¿Qué es una base de datos no relacional?
+  - ¿Qué ventajas y desventajas tiene?
+  - ¿Cómo se escala? (Sharding)
+- ¿Qué es una clave primaria?
+- ¿Qué es una clave foránea?
+- ¿Qué es un índice?
+- ¿Qué es una transacción?
+- ¿Qué es un join?
+
+---
+
+# Preguntas tícipas de frontend
+
+- ¿Qué es el DOM?
+- ¿Qué es el Virtual DOM?
+- ¿Qué es un componente?
+- ¿Qué es un hook?
+- ¿Qué es un estado?
+- ¿Qué es un prop?
+- ¿Cómo funciona el useEffect en React?
+- ¿Cómo funciona el useMemo en React?
+- ¿Cómo funciona el useContext/Redux en React?
+
+---
+
+# Preguntas típicas de arquitectura
+
+- ¿Qué es un microservicio?
+  - ¿Qué ventajas y desventajas tiene?
+- ¿Qué es un monolito?
+  - ¿Qué ventajas y desventajas tiene?
+- ¿Qué es un gateway?
+- ¿Qué es un servidor web?
+- ¿Qué es un CDN?
+- ¿Qué es un proxy?
+- ¿Qué es un balanceador de carga?
+- ¿Qué es una cola de eventos? (RabbitMQ/Kafka)
+- ¿Qué es una caché? (Redis)
