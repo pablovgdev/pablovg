@@ -70,11 +70,12 @@ Valores clave:
 
 ---
 
-# 5. Cómo crecer profesionalmente
+# 5. Cómo crecer profesional y econónomicamente
 
 - No dejes nunca de aprender, ni siquiera cuando seas muy senior
 - Mejora la comunicación con tu equipo
-- Bonus: El lenguaje de programación más importante es el inglés
+- El lenguaje de programación más importante es el inglés
+- Cambia de empresa cada 2-3 años
 
 ---
 
